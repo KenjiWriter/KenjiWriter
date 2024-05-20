@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Maciej</h1>
-<h3 align="center">A 18yo php/laravel backend developer</h3>
+<h3 align="center">A 20yo php/laravel backend developer</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=kenjiwriter&label=Profile%20views&color=0e75b6&style=flat" alt="kenjiwriter" /> </p>
 
@@ -7,7 +7,7 @@
 
 - 🔭 I’m currently working on [Quizz app](https://github.com/KenjiWriter/QuizApp)
 
-- 🌱 I’m currently learning **laravel 9.***
+- 🌱 I’m currently learning **laravel 11.***
 
 - 📫 How to reach me **maciej.wisniewski@aol.com**
 
