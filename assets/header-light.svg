@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="260" viewBox="36 0 900 260" role="img" aria-labelledby="title desc">
+<title id="title">Maciej Wiśniewski</title>
+<desc id="desc">Software architect for digital business. Computer science engineering student specializing in network and systems security.</desc>
+<style>
+.sans{font-family:-apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,&quot;Noto Sans&quot;,Helvetica,Arial,sans-serif}
+.mono{font-family:ui-monospace,SFMono-Regular,&quot;SF Mono&quot;,Menlo,Consolas,&quot;Liberation Mono&quot;,monospace}
+.fg{fill:#1f2328} .mu{fill:#59636e} .ac{fill:#c2410c}
+@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes flow{from{stroke-dashoffset:16}to{stroke-dashoffset:0}}
+@keyframes pulse{0%{transform:scale(.7);opacity:.5}100%{transform:scale(1.7);opacity:0}}
+@media (prefers-reduced-motion: reduce){.pk{display:none}}.edge{fill:none;stroke:#d0d7de;stroke-width:1.2}
+.node{fill:#ffffff;stroke:#59636e;stroke-width:1.4}
+.ring{fill:none;stroke:#c2410c;stroke-width:1.2;opacity:.25;transform-box:fill-box;transform-origin:center}
+.rule{fill:none;stroke:#c2410c;stroke-width:2;stroke-linecap:round}
+@media (prefers-reduced-motion: no-preference){
+  .in{opacity:0;animation:rise .9s cubic-bezier(.2,.7,.2,1) forwards}
+  .fd{opacity:0;animation:fade 1.2s ease forwards}
+  .edge,.rule{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.4s cubic-bezier(.4,0,.2,1) forwards}
+  .rule{animation-duration:.8s;animation-delay:.75s}
+  .ring{animation:pulse 3.4s ease-out 1.6s infinite}
+}.d0{animation-delay:0.05s}.d1{animation-delay:0.17s}.d2{animation-delay:0.29s}.d3{animation-delay:0.41s}.d4{animation-delay:0.53s}.e0{animation-delay:0.50s}.e1{animation-delay:0.58s}.e2{animation-delay:0.66s}.e3{animation-delay:0.74s}.e4{animation-delay:0.82s}.e5{animation-delay:0.90s}.e6{animation-delay:0.98s}.e7{animation-delay:1.06s}.e8{animation-delay:1.14s}.n0{animation-delay:0.90s}.n1{animation-delay:0.97s}.n2{animation-delay:1.04s}.n3{animation-delay:1.11s}.n4{animation-delay:1.18s}.n5{animation-delay:1.25s}.n6{animation-delay:1.32s}
+</style>
+<defs>
+  <pattern id="grid" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="0.9" fill="#d0d7de"/></pattern>
+  <radialGradient id="fade" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+  <mask id="m"><rect x="560" y="0" width="400" height="260" fill="url(#fade)"/></mask>
+</defs>
+
+<rect class="fd n0" x="560" y="0" width="400" height="260" fill="url(#grid)" mask="url(#m)"/>
+
+<text class="mono ac in d0" x="40" y="74" font-size="13" letter-spacing="2.4">SOFTWARE ARCHITECT · DIGITAL BUSINESS</text>
+<text class="sans fg in d1" x="38" y="128" font-size="46" font-weight="600" letter-spacing="-0.6">Maciej Wiśniewski</text>
+<path class="rule" pathLength="1" d="M41 153 L97 153"/>
+<text class="sans fg in d2" x="40" y="190" font-size="17" opacity=".92">I design and ship web products end to end.</text>
+<text class="sans mu in d3" x="40" y="218" font-size="14">CS engineering student · Network &amp; systems security · Łódź, Poland</text>
+
+<g>
+<path class="edge e0" pathLength="1" d="M630 62 L772 126"/>
+<path class="edge e1" pathLength="1" d="M642 190 L772 126"/>
+<path class="edge e2" pathLength="1" d="M890 60 L772 126"/>
+<path class="edge e3" pathLength="1" d="M906 182 L772 126"/>
+<path class="edge e4" pathLength="1" d="M800 238 L772 126"/>
+<path class="edge e5" pathLength="1" d="M642 190 L800 238"/>
+<path class="edge e6" pathLength="1" d="M906 182 L800 238"/>
+<path class="edge e7" pathLength="1" d="M890 60 L906 182"/>
+<path class="edge e8" pathLength="1" d="M630 62 L642 190"/>
+
+<path class="edge e8" pathLength="1" d="M703.0 149.9 L711.0 166.1" stroke-width="2" stroke-linecap="round">
+  <animate attributeName="stroke" values="#d0d7de;#d0d7de;#cf222e;#d0d7de;#d0d7de" keyTimes="0;0.43;0.47;0.66;1" dur="6s" begin="3.6s" repeatCount="indefinite"/>
+</path>
+<g class="fd n0"><circle class="node" cx="630" cy="62" r="4.5"/></g>
+<g class="fd n1"><circle class="node" cx="642" cy="190" r="4.5"/></g>
+<g class="fd n2"><circle class="node" cx="890" cy="60" r="4.5"/></g>
+<g class="fd n3"><circle class="node" cx="906" cy="182" r="4.5"/></g>
+<g class="fd n4"><circle class="node" cx="800" cy="238" r="4.5"/></g>
+
+<g class="fd n5">
+  <circle class="ring" cx="772" cy="126" r="22"/>
+  <rect x="757" y="111" width="30" height="30" rx="7" fill="#ffffff" stroke="#c2410c" stroke-width="1.4"/>
+  <path d="M764 119.5 H776 M764 126 H776 M764 132.5 H776" stroke="#59636e" stroke-width="1.6" stroke-linecap="round"/>
+  <circle cx="780.5" cy="119.5" r="1.6" fill="#c2410c"/>
+</g>
+<g class="pk">
+<circle r="2.6" fill="#c2410c" opacity="0">
+  <animateMotion path="M630,62 L772,126" dur="5s" begin="1.8s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.55;1" calcMode="linear"/>
+  <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.06;0.55;0.61;1" dur="5s" begin="1.8s" repeatCount="indefinite"/>
+</circle><circle r="2.6" fill="#c2410c" opacity="0">
+  <animateMotion path="M772,126 L890,60" dur="5s" begin="3.1s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.55;1" calcMode="linear"/>
+  <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.06;0.55;0.61;1" dur="5s" begin="3.1s" repeatCount="indefinite"/>
+</circle><circle r="2.6" fill="#c2410c" opacity="0">
+  <animateMotion path="M906,182 L772,126" dur="6s" begin="2.4s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.55;1" calcMode="linear"/>
+  <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.06;0.55;0.61;1" dur="6s" begin="2.4s" repeatCount="indefinite"/>
+</circle><circle r="2.6" fill="#c2410c" opacity="0">
+  <animateMotion path="M772,126 L800,238" dur="5.5s" begin="4s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.55;1" calcMode="linear"/>
+  <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.06;0.55;0.61;1" dur="5.5s" begin="4s" repeatCount="indefinite"/>
+</circle><circle r="2.6" fill="#59636e" opacity="0">
+  <animateMotion path="M800,238 L906,182" dur="6.5s" begin="5s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.55;1" calcMode="linear"/>
+  <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.06;0.55;0.61;1" dur="6.5s" begin="5s" repeatCount="indefinite"/>
+</circle><circle r="2.6" fill="#c2410c" opacity="0">
+  <animateMotion path="M642,190 L699.2,161.8" dur="6s" begin="3.6s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.45;1" calcMode="linear"/>
+  <animate attributeName="fill" values="#c2410c;#c2410c;#cf222e;#cf222e" keyTimes="0;0.43;0.47;1" dur="6s" begin="3.6s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.06;0.47;0.68;1" dur="6s" begin="3.6s" repeatCount="indefinite"/>
+</circle>
+</g>
+</g>
+</svg>

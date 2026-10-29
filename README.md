@@ -1,116 +1,81 @@
-<div align="center">
-  
-# 👋 Maciej Wiśniewski
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
+  <img src="assets/header-light.svg" alt="Maciej Wiśniewski, software architect for digital business" width="100%">
+</picture>
 
-### 🚀 Backend Developer | Laravel Specialist
+<p align="center">
+  <a href="https://berserkrush.pl"><b>berserkrush.pl</b></a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="mailto:maciej.wisniewski@aol.com">maciej.wisniewski@aol.com</a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="https://discord.com/invite/berserkrush">Discord</a>
+</p>
 
-[![Profile Views](https://komarev.com/ghpvc/?username=kenjiwriter&label=Profile%20views&color=ea580c&style=for-the-badge)](https://github.com/kenjiwriter)
-[![GitHub followers](https://img.shields.io/github/followers/kenjiwriter?style=for-the-badge&color=ea580c)](https://github.com/kenjiwriter?tab=followers)
+## About
 
-</div>
+I'm 22 and I build software for digital businesses from the first conversation to production: requirements, data model, backend, frontend, mobile apps, deployment and support after launch. My strongest ground is backend architecture with Laravel and PostgreSQL.
 
----
+I'm also a Computer Science engineering student specializing in **network and systems security**, and it shapes how I build: authorization lives on the server, money and items only move inside transactions, important actions leave an audit trail, and nothing is trusted just because the client sent it.
 
-## 💫 About Me
+## Flagship: Berserk Rush
 
-```yaml
-name: Maciej Wiśniewski
-age: 21
-role: Backend Developer
-focus: Laravel | PHP | Web Applications
-location: Poland 🇵🇱
-status: Building scalable web solutions
-currently_learning: Laravel 12.x & Advanced Patterns
-```
+**[Berserk Rush](https://berserkrush.pl)** is a multiplayer browser RPG that I designed, built and operate on my own: turn-based combat, a player-driven market, guilds, a PvP arena and a 3D world map. It runs on the web, Android, iOS and Windows, with a Discord community of 300.
 
-🎯 **Passionate about** creating robust, maintainable backend systems with focus on clean architecture and best practices.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/berserk-rush-dark.svg">
+  <img src="assets/berserk-rush-light.svg" alt="Berserk Rush architecture: browser, mobile, Windows and Discord clients talk to a Laravel 12 application on Octane, backed by PostgreSQL, Reverb, queue workers and integrations" width="100%">
+</picture>
 
----
+- **Backend:** Laravel 12 on Octane (FrankenPHP), 32 domain modules, PostgreSQL with a hub database plus one database per game server.
+- **Realtime and background work:** Reverb WebSockets for chat and live events; queue workers that run server-side expeditions and a population of bots that plays like real users.
+- **Frontend:** Livewire and Alpine with Vue 3 islands; a Three.js world with a KTX2 / meshopt asset pipeline tuned for phones.
+- **Apps:** Capacitor builds on [Google Play](https://play.google.com/store/apps/details?id=pl.berserkrush.app) and the [App Store](https://apps.apple.com/pl/app/berserk-rush/id6817840892) (in-app purchases, Sign in with Apple, push notifications), an Electron launcher for Windows and a discord.js bot linked to game accounts.
+- **Open data:** a documented, read-only REST API (`/api/v1`) with scoped tokens for guild leaders.
+- **AI:** an in-game wiki assistant built on the Claude API.
+- **Quality:** 2,400+ Pest tests, k6 load tests, 97 module docs, 5 languages.
 
-## 🛠️ Tech Stack
+<sub>The source is private because the game is a live commercial product. I'm happy to walk through the code in an interview.</sub>
 
-### **Backend**
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
-![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+## Products for businesses
 
-### **Frontend**
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Alpine.js](https://img.shields.io/badge/Alpine.js-8BC0D0?style=for-the-badge&logo=alpine.js&logoColor=black)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+| Product | What it does | Built with |
+|---|---|---|
+| **[Client Reminder](https://github.com/KenjiWriter/client-reminder-app)** | **Client project delivered for Fundacja Centrum Pro Bono.** Appointment portal for small clinics: drag-and-drop calendar, online booking with approval, automatic SMS confirmations and 24 h reminders, client medical card with risk flags, two-way Google Calendar sync, built-in mail client. | Laravel 12, Inertia, Vue 3, TypeScript |
+| **[IT Helpdesk](https://github.com/KenjiWriter/helpdesk-it)** | Internal IT service desk: an employee portal plus a control center for technicians, a strict ticket lifecycle, read-only audit trail, SLA and workload reporting, 2FA. | Laravel 12, Livewire 4, Filament 5 |
+| **[QrMe](https://github.com/KenjiWriter/QrMe)** | Digital business cards for teams: a mobile-first page and a QR code for every employee, scan tracking that counts real scans only, one-tap vCard save, PL / EN. | Laravel 13, Vue 3, Tailwind 4 |
+| **[Neighborly](https://github.com/KenjiWriter/Neighborly)** | Housing-community management: deny-by-default roles, data scoped to community, building and unit, an immutable audit log. | Laravel 12, Vue 3, Inertia |
 
-### **Tools & Platforms**
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![Composer](https://img.shields.io/badge/Composer-885630?style=for-the-badge&logo=composer&logoColor=white)
-![NPM](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)
+In progress: **[RideIdle](https://github.com/KenjiWriter/RideIdle)**, an idle racing game built as an API-first engine (Laravel + Vue 3 / TypeScript), with server-authoritative settlement in integer math and CI against both MariaDB and PostgreSQL.
 
----
+## Security in practice
 
-## 🚀 Current Projects
+Things I have built, not only studied:
 
-### 🍳 [Kitchen Manager](https://github.com/KenjiWriter/kitchen-manager)
-> Smart kitchen inventory and recipe management system
-- 📦 Inventory tracking and expiration alerts
-- 🍽️ Recipe database with ingredient management
-- 📊 Shopping list generation
-- 🎯 Built with Laravel 12.x
+- **Abuse prevention** · _Berserk Rush_<br>Cloudflare Turnstile on sign-up, per-network account limits (IPv6 grouped by /64) and automatic multi-account lockouts that escalate from 1 h to 2 h to 4 h and fire only after three confirming checks.
+- **Authorization on the server** · _Neighborly_<br>Deny-by-default policies plus query scopes, so changing an ID in the URL returns 403 instead of someone else's data.
+- **Integrity of money and items** · _Berserk Rush, RideIdle_<br>Balance changes run in transactions with row locks and idempotency keys; item and currency ledgers record where every change came from.
+- **Audit trails** · _IT Helpdesk, Neighborly_<br>Read-only history written by model observers, so every status change and assignment can be traced.
+- **Account security and privacy** · _IT Helpdesk, Client Reminder_<br>TOTP two-factor authentication, mail credentials encrypted in the database, and an SMS opt-out that staff cannot override.
+- **Minimal data exposure** · _Berserk Rush_<br>The public API lists every field explicitly instead of serializing models, and guild data sits behind tokens scoped to that guild.
 
----
+## Toolbox
 
-## 📊 GitHub Stats
+| Area | Tools |
+|---|---|
+| **Backend** | PHP 8.4, Laravel 12 / 13, Octane (FrankenPHP), Livewire, Filament, Inertia, Pest |
+| **Frontend** | Vue 3, TypeScript, Alpine.js, Tailwind CSS, Three.js |
+| **Data and realtime** | PostgreSQL, MySQL / MariaDB, Laravel Reverb, queues and schedulers |
+| **Apps** | Capacitor (Android, iOS), Electron, discord.js |
+| **Infrastructure** | Linux (Ubuntu), nginx, Supervisor, Let's Encrypt, GitHub Actions, Codemagic, k6 |
+| **AI** | Claude Code, Claude API |
 
-<div align="center">
+## How I work with AI
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=kenjiwriter&show_icons=true&theme=dark&hide_border=true&bg_color=0D1117&title_color=ea580c&icon_color=ea580c&text_color=ffffff)
+Claude Code is part of my daily workflow, used like a pair programmer that follows the same rules I do. Each larger project carries its own agent guidelines and custom skills (architecture conventions, transaction rules, translations, how to verify a change), and nothing ships without my review and passing tests. I get the speed and keep full ownership of the code.
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=kenjiwriter&layout=compact&theme=dark&hide_border=true&bg_color=0D1117&title_color=ea580c&text_color=ffffff)
+## Activity
 
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=kenjiwriter&theme=dark&hide_border=true&background=0D1117&ring=ea580c&fire=ea580c&currStreakLabel=ea580c)
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=KenjiWriter&hide_border=true&background=00000000&stroke=30363D&ring=F0883E&fire=F0883E&currStreakLabel=F0883E&currStreakNum=E6EDF3&sideNums=E6EDF3&sideLabels=8B949E&dates=8B949E">
+    <img src="https://streak-stats.demolab.com/?user=KenjiWriter&hide_border=true&background=00000000&stroke=D0D7DE&ring=C2410C&fire=C2410C&currStreakLabel=C2410C&currStreakNum=1F2328&sideNums=1F2328&sideLabels=59636E&dates=59636E" alt="GitHub contribution streak">
+  </picture>
+</p>
 
-</div>
-
----
-
-## 🏆 GitHub Trophies
-
-<div align="center">
-
-[![trophy](https://github-profile-trophy.vercel.app/?username=kenjiwriter&theme=darkhub&no-frame=true&no-bg=true&margin-w=4&column=7)](https://github.com/ryo-ma/github-profile-trophy)
-
-</div>
-
----
-
-## 🤝 Connect With Me
-
-<div align="center">
-
-[![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?style=for-the-badge&logo=Facebook&logoColor=white)](https://www.facebook.com/profile.php?id=100013757160621)
-[![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)](https://www.youtube.com/c/nayko)
-[![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/eGnzxAg)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:maciej.wisniewski@aol.com)
-
-</div>
-
----
-
-## 💡 Currently Learning
-
-- 🔥 Laravel 12.x advanced features
-- 🎨 Modern PHP design patterns
-- 🚀 API development best practices
-- 📊 Database optimization techniques
-- 🛡️ Security & authentication systems
-
----
-
-<div align="center">
-
-### 💬 "Code is like humor. When you have to explain it, it's bad." - Cory House
-
-![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=kenjiwriter.kenjiwriter)
-
-</div>
+<p align="center"><sub>Łódź, Poland&nbsp;&nbsp;·&nbsp;&nbsp;open to backend, software architecture and security roles</sub></p>

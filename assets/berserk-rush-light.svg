@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="884" height="410" viewBox="38 0 884 410" role="img" aria-labelledby="title desc">
+<title id="title">Berserk Rush architecture</title>
+<desc id="desc">Clients (browser, Android and iOS, Windows, Discord and public API) talk to a Laravel 12 application on Octane, backed by PostgreSQL, Reverb WebSockets, queue workers and integrations.</desc>
+<style>
+.sans{font-family:-apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,&quot;Noto Sans&quot;,Helvetica,Arial,sans-serif}
+.mono{font-family:ui-monospace,SFMono-Regular,&quot;SF Mono&quot;,Menlo,Consolas,&quot;Liberation Mono&quot;,monospace}
+.fg{fill:#1f2328} .mu{fill:#59636e} .ac{fill:#c2410c}
+@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes flow{from{stroke-dashoffset:16}to{stroke-dashoffset:0}}
+@keyframes pulse{0%{transform:scale(.7);opacity:.5}100%{transform:scale(1.7);opacity:0}}
+@media (prefers-reduced-motion: reduce){.pk{display:none}}.wire{fill:none;stroke:#d0d7de;stroke-width:1.2;stroke-dasharray:3 5}
+.lbl{font-size:11px;letter-spacing:2px}
+.chip rect{fill:none;stroke:#d0d7de}
+@media (prefers-reduced-motion: no-preference){
+  .in{opacity:0;animation:rise .8s cubic-bezier(.2,.7,.2,1) forwards}
+  .fd{opacity:0;animation:fade 1s ease forwards}
+  .wire{animation:flow 1.6s linear infinite}
+}.a0{animation-delay:0.05s}.a1{animation-delay:0.12s}.a2{animation-delay:0.19s}.a3{animation-delay:0.26s}.a4{animation-delay:0.33s}.a5{animation-delay:0.40s}.a6{animation-delay:0.47s}.a7{animation-delay:0.54s}.a8{animation-delay:0.61s}.a9{animation-delay:0.68s}.a10{animation-delay:0.75s}.a11{animation-delay:0.82s}.a12{animation-delay:0.89s}.a13{animation-delay:0.96s}.a14{animation-delay:1.03s}.a15{animation-delay:1.10s}.c0{animation-delay:0.95s}.c1{animation-delay:0.99s}.c2{animation-delay:1.04s}.c3{animation-delay:1.08s}.c4{animation-delay:1.13s}.c5{animation-delay:1.17s}.c6{animation-delay:1.22s}.c7{animation-delay:1.26s}.c8{animation-delay:1.31s}.c9{animation-delay:1.35s}.c10{animation-delay:1.40s}.c11{animation-delay:1.44s}.c12{animation-delay:1.49s}
+</style>
+<text class="mono mu lbl fd a0" x="40" y="28">CLIENTS</text>
+<g class="in a1">
+  <rect x="40" y="40" width="205" height="56" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text class="sans fg" x="56" y="40" dy="24" font-size="14" font-weight="600">Browser</text>
+  <text class="sans mu" x="56" y="40" dy="43" font-size="12">Livewire · Vue 3 · Three.js</text>
+</g>
+<g class="in a2">
+  <rect x="265" y="40" width="205" height="56" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text class="sans fg" x="281" y="40" dy="24" font-size="14" font-weight="600">Android · iOS</text>
+  <text class="sans mu" x="281" y="40" dy="43" font-size="12">Capacitor, in both stores</text>
+</g>
+<g class="in a3">
+  <rect x="490" y="40" width="205" height="56" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text class="sans fg" x="506" y="40" dy="24" font-size="14" font-weight="600">Windows</text>
+  <text class="sans mu" x="506" y="40" dy="43" font-size="12">Electron launcher</text>
+</g>
+<g class="in a4">
+  <rect x="715" y="40" width="205" height="56" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text class="sans fg" x="731" y="40" dy="24" font-size="14" font-weight="600">Discord · API</text>
+  <text class="sans mu" x="731" y="40" dy="43" font-size="12">discord.js bot · REST /api/v1</text>
+</g>
+<g class="fd a5">
+<path class="wire" d="M142.5 96 L142.5 150"/>
+<path class="wire" d="M142.5 250 L142.5 300"/>
+<path class="wire" d="M367.5 96 L367.5 150"/>
+<path class="wire" d="M367.5 250 L367.5 300"/>
+<path class="wire" d="M592.5 96 L592.5 150"/>
+<path class="wire" d="M592.5 250 L592.5 300"/>
+<path class="wire" d="M817.5 96 L817.5 150"/>
+<path class="wire" d="M817.5 250 L817.5 300"/>
+</g>
+<text class="mono mu lbl fd a6" x="40" y="138">APPLICATION</text>
+<g class="in a7">
+  <rect x="40" y="150" width="880" height="100" rx="12" fill="#f6f8fa" stroke="#c2410c" stroke-opacity=".55"/>
+  <text class="sans fg" x="64" y="181" font-size="17" font-weight="600">Laravel 12 on Octane (FrankenPHP)</text>
+  <text class="mono mu" x="896" y="181" font-size="12" text-anchor="end">32 domain modules</text>
+  <text class="sans mu" x="64" y="203" font-size="13">Server-authoritative game logic · Result pattern · every transfer in a DB transaction with idempotency guards</text>
+</g>
+<g class="chip fd c0"><rect x="64" y="216" width="57.6" height="21" rx="10.5"/><text class="mono mu" x="92.8" y="230.5" font-size="11" text-anchor="middle">combat</text></g>
+<g class="chip fd c1"><rect x="129.6" y="216" width="64.2" height="21" rx="10.5"/><text class="mono mu" x="161.7" y="230.5" font-size="11" text-anchor="middle">economy</text></g>
+<g class="chip fd c2"><rect x="201.8" y="216" width="64.2" height="21" rx="10.5"/><text class="mono mu" x="233.9" y="230.5" font-size="11" text-anchor="middle">trading</text></g>
+<g class="chip fd c3"><rect x="274" y="216" width="37.8" height="21" rx="10.5"/><text class="mono mu" x="292.9" y="230.5" font-size="11" text-anchor="middle">pvp</text></g>
+<g class="chip fd c4"><rect x="319.8" y="216" width="57.6" height="21" rx="10.5"/><text class="mono mu" x="348.6" y="230.5" font-size="11" text-anchor="middle">guilds</text></g>
+<g class="chip fd c5"><rect x="385.4" y="216" width="44.4" height="21" rx="10.5"/><text class="mono mu" x="407.6" y="230.5" font-size="11" text-anchor="middle">chat</text></g>
+<g class="chip fd c6"><rect x="437.8" y="216" width="57.6" height="21" rx="10.5"/><text class="mono mu" x="466.6" y="230.5" font-size="11" text-anchor="middle">quests</text></g>
+<g class="chip fd c7"><rect x="503.4" y="216" width="64.2" height="21" rx="10.5"/><text class="mono mu" x="535.5" y="230.5" font-size="11" text-anchor="middle">dungeon</text></g>
+<g class="chip fd c8"><rect x="575.6" y="216" width="44.4" height="21" rx="10.5"/><text class="mono mu" x="597.8" y="230.5" font-size="11" text-anchor="middle">bots</text></g>
+<g class="chip fd c9"><rect x="628" y="216" width="57.6" height="21" rx="10.5"/><text class="mono mu" x="656.8" y="230.5" font-size="11" text-anchor="middle">mining</text></g>
+<g class="chip fd c10"><rect x="693.6" y="216" width="84" height="21" rx="10.5"/><text class="mono mu" x="735.6" y="230.5" font-size="11" text-anchor="middle">public-api</text></g>
+<g class="chip fd c11"><rect x="785.6" y="216" width="70.8" height="21" rx="10.5"/><text class="mono ac" x="821" y="230.5" font-size="11" text-anchor="middle">+21 more</text></g>
+<text class="mono mu lbl fd a8" x="40" y="288">DATA &amp; SERVICES</text>
+<g class="in a9">
+  <rect x="40" y="300" width="205" height="56" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text class="sans fg" x="56" y="300" dy="24" font-size="14" font-weight="600">PostgreSQL</text>
+  <text class="sans mu" x="56" y="300" dy="43" font-size="12">hub + one DB per game server</text>
+</g>
+<g class="in a10">
+  <rect x="265" y="300" width="205" height="56" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text class="sans fg" x="281" y="300" dy="24" font-size="14" font-weight="600">Reverb</text>
+  <text class="sans mu" x="281" y="300" dy="43" font-size="12">WebSockets: chat, live events</text>
+</g>
+<g class="in a11">
+  <rect x="490" y="300" width="205" height="56" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text class="sans fg" x="506" y="300" dy="24" font-size="14" font-weight="600">Workers</text>
+  <text class="sans mu" x="506" y="300" dy="43" font-size="12">queues · scheduler · bot sim</text>
+</g>
+<g class="in a12">
+  <rect x="715" y="300" width="205" height="56" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text class="sans fg" x="731" y="300" dy="24" font-size="14" font-weight="600">Integrations</text>
+  <text class="sans mu" x="731" y="300" dy="43" font-size="12">payments · Claude API</text>
+</g>
+<text class="mono mu fd a14" x="480" y="394" font-size="12.5" text-anchor="middle">1,900+ commits<tspan fill="#c2410c">  ·  </tspan>2,400+ automated tests<tspan fill="#c2410c">  ·  </tspan>5 languages<tspan fill="#c2410c">  ·  </tspan>web, Android, iOS, Windows</text>
+
+<g class="pk">
+<circle r="2.6" fill="#59636e" opacity="0">
+  <animateMotion path="M142.5,96 L142.5,150" dur="4.2s" begin="1.6s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.40;1" calcMode="linear"/>
+  <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.06;0.40;0.46;1" dur="4.2s" begin="1.6s" repeatCount="indefinite"/>
+</circle><circle r="2.6" fill="#c2410c" opacity="0">
+  <animateMotion path="M367.5,150 L367.5,96" dur="4.8s" begin="2.6s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.40;1" calcMode="linear"/>
+  <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.06;0.40;0.46;1" dur="4.8s" begin="2.6s" repeatCount="indefinite"/>
+</circle><circle r="2.6" fill="#c2410c" opacity="0">
+  <animateMotion path="M142.5,150 L142.5,96" dur="5.4s" begin="3.4s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.40;1" calcMode="linear"/>
+  <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.06;0.40;0.46;1" dur="5.4s" begin="3.4s" repeatCount="indefinite"/>
+</circle><circle r="2.6" fill="#59636e" opacity="0">
+  <animateMotion path="M817.5,96 L817.5,150" dur="5s" begin="2.2s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.40;1" calcMode="linear"/>
+  <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.06;0.40;0.46;1" dur="5s" begin="2.2s" repeatCount="indefinite"/>
+</circle><circle r="2.6" fill="#59636e" opacity="0">
+  <animateMotion path="M142.5,250 L142.5,300" dur="4.4s" begin="2s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.40;1" calcMode="linear"/>
+  <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.06;0.40;0.46;1" dur="4.4s" begin="2s" repeatCount="indefinite"/>
+</circle><circle r="2.6" fill="#59636e" opacity="0">
+  <animateMotion path="M592.5,250 L592.5,300" dur="5.6s" begin="3s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.40;1" calcMode="linear"/>
+  <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.06;0.40;0.46;1" dur="5.6s" begin="3s" repeatCount="indefinite"/>
+</circle><circle r="2.6" fill="#c2410c" opacity="0">
+  <animateMotion path="M367.5,300 L367.5,250" dur="4.6s" begin="2.8s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.40;1" calcMode="linear"/>
+  <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.06;0.40;0.46;1" dur="4.6s" begin="2.8s" repeatCount="indefinite"/>
+</circle>
+</g>
+</svg>
