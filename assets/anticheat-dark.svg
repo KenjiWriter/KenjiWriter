@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="884" height="186" viewBox="38 0 884 186" role="img" aria-labelledby="title desc">
+<title id="title">Berserk Rush anti-cheat pipeline</title>
+<desc id="desc">Signals from login history feed an account graph, detectors run every minute on each server, and confirmed cases end in a review queue or escalating lockouts.</desc>
+<style>
+.sans{font-family:-apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,&quot;Noto Sans&quot;,Helvetica,Arial,sans-serif}
+.mono{font-family:ui-monospace,SFMono-Regular,&quot;SF Mono&quot;,Menlo,Consolas,&quot;Liberation Mono&quot;,monospace}
+.fg{fill:#e6edf3} .mu{fill:#8b949e} .ac{fill:#f0883e}
+@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes flow{from{stroke-dashoffset:16}to{stroke-dashoffset:0}}
+@keyframes pulse{0%{transform:scale(.7);opacity:.5}100%{transform:scale(1.7);opacity:0}}
+@media (prefers-reduced-motion: reduce){.pk{display:none}}.wire{fill:none;stroke:#30363d;stroke-width:1.2;stroke-dasharray:3 5}
+.tip{fill:none;stroke:#8b949e;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
+@media (prefers-reduced-motion: no-preference){
+  .in{opacity:0;animation:rise .8s cubic-bezier(.2,.7,.2,1) forwards}
+  .fd{opacity:0;animation:fade 1s ease forwards}
+  .wire{animation:flow 1.6s linear infinite}
+}.a0{animation-delay:0.05s}.a1{animation-delay:0.17s}.a2{animation-delay:0.29s}.a3{animation-delay:0.41s}.a4{animation-delay:0.53s}.a5{animation-delay:0.65s}.a6{animation-delay:0.77s}.a7{animation-delay:0.89s}
+</style>
+<g class="in a0">
+  <rect x="40" y="20" width="200" height="146" rx="10" fill="#161b22" stroke="#30363d"/>
+  <text class="mono ac" x="56" y="45" font-size="10.5" letter-spacing="1.6">01  SIGNALS</text>
+  <text class="sans fg" x="56" y="70" font-size="15" font-weight="600">Login history</text>
+  <text class="sans mu" x="56" y="96" font-size="12">one row per signal a day</text>
+  <text class="sans mu" x="56" y="114" font-size="12">IP, IPv6 grouped by /64</text>
+  <text class="sans mu" x="56" y="132" font-size="12">device fingerprint</text>
+  <text class="sans mu" x="56" y="150" font-size="12">tab visibility, action pace</text>
+</g>
+<g class="fd a4"><path class="wire" d="M244 93 L262.66666666667 93"/><path class="tip" d="M257.66666666667 89 L262.66666666667 93 L257.66666666667 97"/></g>
+<g class="in a1">
+  <rect x="266.66666666667" y="20" width="200" height="146" rx="10" fill="#161b22" stroke="#30363d"/>
+  <text class="mono ac" x="282.66666666667" y="45" font-size="10.5" letter-spacing="1.6">02  CORRELATION</text>
+  <text class="sans fg" x="282.66666666667" y="70" font-size="15" font-weight="600">Account graph</text>
+  <text class="sans mu" x="282.66666666667" y="96" font-size="12">relinked every 10 minutes</text>
+  <text class="sans mu" x="282.66666666667" y="114" font-size="12">shared signals discarded</text>
+  <text class="sans mu" x="282.66666666667" y="132" font-size="12">IP-only links need 3 days</text>
+  <text class="sans mu" x="282.66666666667" y="150" font-size="12">grouped into one person</text>
+</g>
+<g class="fd a5"><path class="wire" d="M470.66666666667 93 L489.33333333333 93"/><path class="tip" d="M484.33333333333 89 L489.33333333333 93 L484.33333333333 97"/></g>
+<g class="in a2">
+  <rect x="493.33333333333" y="20" width="200" height="146" rx="10" fill="#161b22" stroke="#30363d"/>
+  <text class="mono ac" x="509.33333333333" y="45" font-size="10.5" letter-spacing="1.6">03  DETECTION</text>
+  <text class="sans fg" x="509.33333333333" y="70" font-size="15" font-weight="600">Detectors</text>
+  <text class="sans mu" x="509.33333333333" y="96" font-size="12">every minute, per server</text>
+  <text class="sans mu" x="509.33333333333" y="114" font-size="12">kill-rate anomalies</text>
+  <text class="sans mu" x="509.33333333333" y="132" font-size="12">device and IP farms</text>
+  <text class="sans mu" x="509.33333333333" y="150" font-size="12">linked accounts at once</text>
+</g>
+<g class="fd a6"><path class="wire" d="M697.33333333333 93 L716 93"/><path class="tip" d="M711 89 L716 93 L711 97"/></g>
+<g class="in a3">
+  <rect x="720" y="20" width="200" height="146" rx="10" fill="#161b22" stroke="#f0883e" stroke-opacity=".55"/>
+  <text class="mono ac" x="736" y="45" font-size="10.5" letter-spacing="1.6">04  RESPONSE</text>
+  <text class="sans fg" x="736" y="70" font-size="15" font-weight="600">Review and lockouts</text>
+  <text class="sans mu" x="736" y="96" font-size="12">deduplicated flag queue</text>
+  <text class="sans mu" x="736" y="114" font-size="12">3 confirmations first</text>
+  <text class="sans mu" x="736" y="132" font-size="12">1 h, 2 h, 4 h escalation</text>
+  <text class="sans mu" x="736" y="150" font-size="12">keeps oldest accounts</text>
+</g>
+
+<g class="pk">
+<circle r="2.6" fill="#f0883e" opacity="0">
+  <animateMotion path="M244,93 L256.66666666667,93" dur="3.6s" begin="1.4s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.35;1" calcMode="linear"/>
+  <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.06;0.35;0.41;1" dur="3.6s" begin="1.4s" repeatCount="indefinite"/>
+</circle><circle r="2.6" fill="#f0883e" opacity="0">
+  <animateMotion path="M470.66666666667,93 L483.33333333333,93" dur="3.6s" begin="2.6s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.35;1" calcMode="linear"/>
+  <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.06;0.35;0.41;1" dur="3.6s" begin="2.6s" repeatCount="indefinite"/>
+</circle><circle r="2.6" fill="#f85149" opacity="0">
+  <animateMotion path="M697.33333333333,93 L710,93" dur="3.6s" begin="3.8s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.35;1" calcMode="linear"/>
+  <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.06;0.35;0.41;1" dur="3.6s" begin="3.8s" repeatCount="indefinite"/>
+</circle>
+</g>
+</svg>
